@@ -76,7 +76,7 @@ const LandingPage = () => {
 
           <h1 className="text-4xl text-white font-bold mt-5 mb-3">Our Teams</h1>
           <div className="flex flex-row justify-between gap-6 md:gap-0 flex-wrap">
-            <CardMembers nama={"James Micheal Fritz"} bagian={"Data Science"} photo={james} />
+            <CardMembers nama={"James Michael Fritz"} bagian={"AI Engineer"} photo={james} />
             <CardMembers nama={"Danu Wardana"} bagian={"Front end"} photo={danu} />
             <CardMembers nama={"Ilham Satria"} bagian={"Back end"} photo={ilham}/>
           </div>

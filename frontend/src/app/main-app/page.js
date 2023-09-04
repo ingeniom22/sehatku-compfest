@@ -63,7 +63,7 @@ export default function Home() {
             <h1 className="font-regular text-md">Danu Wardana</h1>
           </div>
         </div>
-        {isMainBeforeActive ? <MainBefore onAsk={handleAsk} /> : <MainAfter formData={formData} LLMResponse={LLMResponse} onBack={handleBack} />}
+        {<MainAfter formData={formData} LLMResponse={LLMResponse} onBack={handleBack} />}
       </div>
     </>
   );

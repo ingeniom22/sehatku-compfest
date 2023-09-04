@@ -13,16 +13,16 @@ function TechStack() {
     {
       imageSrc: langchain,
       title: 'Langchain',
-      description: 'Model ini adalah inti dari kecerdasan buatan kami, memungkinkan kami untuk memberikan solusi AI yang canggih dan efektif.',
+      description: 'Langchain memungkinkan aplikasi menjadi fleksibel dan mudah dikembangkan.',
     },
     {
       imageSrc: meta,
       title: 'Llama2',
-      description: 'Model ini memberikan kontribusi tambahan dalam meningkatkan kualitas dan kinerja aplikasi AI kami.',
+      description: 'Kami menggunakan open source LLM untuk menghasilkan output berkualitas.',
     },
     {
       imageSrc: fastapi,
-      title: 'Fast API',
+      title: 'FastAPI',
       description: 'Kami menggunakan FastAPI sebagai kerangka kerja backend yang tangguh dan efisien untuk menyediakan layanan AI dan mengelola permintaan dari frontend.',
     },
     {

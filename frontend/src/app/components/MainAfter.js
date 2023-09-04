@@ -7,8 +7,6 @@ function MainAfter({ formData, response }) {
   const [answer, setAnswer] = useState("");
   const [sources, setSources] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  setAnswer(response.answer);
-  setSources(response.sources);
 
   const handleInputChange = (e) => {
     setData(e.target.value);
@@ -91,9 +89,9 @@ function MainAfter({ formData, response }) {
           </div>
           {/* FORM ABSOLUTE END */}
 
-          <div className="overflow-y-scroll overflow-x-visible  flex flex-col items-start gap-4" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+          {/* <div className="overflow-y-scroll overflow-x-visible  flex flex-col items-start gap-4" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}> */}
             {/* ----------------- SUMBER --------- */}
-            <h1 className="text-start">Sumber :</h1>
+            {/* <h1 className="text-start">Sumber :</h1> */}
             <div className="wrapper-sumber flex gap-2 flex-wrap w-full justify-start">
               {sources.map((s, index) => (
                 <Card key={index} id={index} title={s.title} text={s.text} author={s.doi} />
@@ -101,12 +99,12 @@ function MainAfter({ formData, response }) {
             </div>
             {/* ---------------- SUMBER END ---------- */}
 
-            <h1 className="text-start">Jawaban :</h1>
+            {/* <h1 className="text-start">Jawaban:</h1> */}
             <div className="w-full">
               <p>{answer}</p>
             </div>
           </div>
-        </div>
+        // </div>
       )}
     </>
   );

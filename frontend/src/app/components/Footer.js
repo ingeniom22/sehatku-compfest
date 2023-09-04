@@ -19,8 +19,8 @@ function Footer() {
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold">James Micheal Fritz</h1>
-            <p>Email : jamesmicheal@gmail.com</p>
-            <p>Contact : 081359357517</p>
+            <p>Email : jamesmichael0444@gmail.com</p>
+            <p>Contact : 087884403882</p>
           </div>
           <div className="flex flex-col">
             <h1 className="font-bold">Ahmad Syahid Danu Wardana</h1>
