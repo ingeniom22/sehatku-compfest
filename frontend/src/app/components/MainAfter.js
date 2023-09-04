@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-function MainAfter({ formData, LLMResponse }) {
+function MainAfter({ formData, response }) {
   const [question, setQuestion] = useState(formData);
   const [data, setData] = useState("");
   const [answer, setAnswer] = useState("");
   const [sources, setSources] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [cardClick, setCardClick] = useState(false)
+  setAnswer(response.answer);
+  setSources(response.sources);
 
   const handleInputChange = (e) => {
     setData(e.target.value);
@@ -41,39 +42,15 @@ function MainAfter({ formData, LLMResponse }) {
     console.log(response);
   };
 
-
   const Card = ({ id, title, text, author }) => {
     return (
-      <div onClick={setCardClick(true)} className="card indicator w-48 flex p-2 bg-[#1D232A] shadow-xl transition duration-500 ease-in-out border border-transparent hover:border-green-400 hover:cursor-pointer">
+      <div className="card indicator w-48 flex p-2 bg-[#1D232A] shadow-xl transition duration-500 ease-in-out border border-transparent hover:border-green-400 hover:cursor-pointer">
         <p className="text-sm font-semibold truncate">{title}</p>
         <p className="text-sm font-regular">
           <span className="text-green-300 text-xs">{author}</span> <span className="indicator-item badge badge-primary"> {id + 1}</span>
         </p>
         <p className="text-sm font-regular hidden truncate transition delay-700 ease-in-out">{text}</p>
       </div>
-    );
-  };
-
-  const Detail = ({ id, title, text, author }) => {
-    const DetailSumber = () => {
-      <>
-        <div className="flex flex-col">
-          <h1>{title}</h1>
-          <h1>{author}</h1>
-          <p>{text}</p>
-        </div>
-      </>;
-    };
-    return (
-      <>
-        <div className={`wrapper-screen bg-black h-screen w-screen ${cardClick ? 'hidden' : ''}`}>
-          <div className="wrapper-sumber flex flex-col gap-2 w-full justify-start">
-            {sources.map((s, index) => (
-              <DetailSumber key={index} id={index} title={s.title} text={s.text} author={s.doi} />
-            ))}
-          </div>
-        </div>
-      </>
     );
   };
 
@@ -100,7 +77,6 @@ function MainAfter({ formData, LLMResponse }) {
 
       {!isLoading && (
         <div className="w-[95%] md:w-[80%] h-screen text-white pt-5 flex flex-col gap-10 justify-center items-center relative">
-          <Detail/>
           <h1 className="font-semibold text-2xl">{question}</h1>
 
           {/* FORM ABSOLUTE */}
