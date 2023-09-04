@@ -22,7 +22,7 @@ app.add_middleware(
 )
 
 persist_directory = "db"
-model_path = "llm_bin/yarn-llama-2-7b-64k.Q2_K.gguf"
+model_path = "llm_bin/llama-2-medqa-finetuned_q4.gguf"
 llama_embeddings = LlamaCppEmbeddings(model_path=model_path)
 
 vectordb = Chroma(
@@ -35,6 +35,7 @@ retriever = vectordb.as_retriever(search_kwargs={"k": 5})
 
 llm = LlamaCpp(
     model_path=model_path,
+    n_ctx=2048,
     temperature=0.75,
     max_tokens=2000,
     top_p=0.95,
