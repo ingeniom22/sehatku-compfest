@@ -4,21 +4,21 @@ function Stats() {
   return (
     <div className="stats stats-vertical bg-transparent text-white shadow-2xl h-[60%] overflow-hidden">
       <div className="stat">
-        <div className="stat-title">Resources</div>
-        <div className="stat-value">31K</div>
-        <div className="stat-desc">Journal & Website</div>
+        <div className="stat-title">Training Data</div>
+        <div className="stat-value">2K</div>
+        <div className="stat-desc">Rows</div>
       </div>
 
       <div className="stat">
-        <div className="stat-title">New Users</div>
-        <div className="stat-value">4,200</div>
-        <div className="stat-desc">↗︎ 400 (22%)</div>
+        <div className="stat-title">Resource</div>
+        <div className="stat-value">21.4K</div>
+        <div className="stat-desc">Articles</div>
       </div>
 
       <div className="stat">
-        <div className="stat-title">New Registers</div>
-        <div className="stat-value my-2">1,200</div>
-        <div className="stat-desc">↘︎ 90 (14%)</div>
+        <div className="stat-title">TechStack</div>
+        <div className="stat-value my-2">6<span className="text-lg"> Latest</span></div>
+        <div className="stat-desc">Technologies</div>
       </div>
     </div>
   );

@@ -13,32 +13,32 @@ function TechStack() {
     {
       imageSrc: langchain,
       title: 'Langchain',
-      description: 'Versi khusus code dari Llama 2 yang dibuat dengan melatih Llama 2 lebih lanjut pada kumpulan data khusus code',
+      description: 'Model ini adalah inti dari kecerdasan buatan kami, memungkinkan kami untuk memberikan solusi AI yang canggih dan efektif.',
     },
     {
       imageSrc: meta,
       title: 'Llama2',
-      description: 'Versi khusus code dari Llama 2 yang dibuat dengan melatih Llama 2 lebih lanjut pada kumpulan data khusus code',
+      description: 'Model ini memberikan kontribusi tambahan dalam meningkatkan kualitas dan kinerja aplikasi AI kami.',
     },
     {
       imageSrc: fastapi,
       title: 'Fast API',
-      description: 'Versi khusus code dari Llama 2 yang dibuat dengan melatih Llama 2 lebih lanjut pada kumpulan data khusus code',
+      description: 'Kami menggunakan FastAPI sebagai kerangka kerja backend yang tangguh dan efisien untuk menyediakan layanan AI dan mengelola permintaan dari frontend.',
     },
     {
       imageSrc: nextjs,
       title: 'Next JS',
-      description: 'Versi khusus code dari Llama 2 yang dibuat dengan melatih Llama 2 lebih lanjut pada kumpulan data khusus code',
+      description: 'Frontend kami didukung oleh Next.js, memungkinkan kami untuk menciptakan antarmuka pengguna yang interaktif dan responsif.',
     },
     {
       imageSrc: docker,
       title: 'Docker',
-      description: 'Versi khusus code dari Llama 2 yang dibuat dengan melatih Llama 2 lebih lanjut pada kumpulan data khusus code',
+      description: 'Docker digunakan untuk mengelola kontainer aplikasi kami, yang mempermudah penyebaran dan skalabilitas.',
     },
     {
       imageSrc: gcp,
       title: 'Google Cloud Platform',
-      description: 'Versi khusus code dari Llama 2 yang dibuat dengan melatih Llama 2 lebih lanjut pada kumpulan data khusus code',
+      description: ' Kami mengandalkan infrastruktur dan layanan canggih dari Google Cloud Platform untuk menyimpan data, melakukan pelatihan model, dan menjalankan aplikasi secara global dan berskala besar.',
     },
     
   
